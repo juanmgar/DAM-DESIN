@@ -3,44 +3,36 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package a_componentes;
+package garciasierra.juanmanuel.a_componentes;
 
 import java.awt.FlowLayout;
-import javax.swing.ButtonGroup;
-import javax.swing.JCheckBox;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.UIManager;
 
 /**
  *
- * @author JuanMa Garcia @juanmgar
+ * @author JuanMa García @juanmgar
  */
-public class Menu extends JFrame {
+public class Reproductor extends JFrame{
 
-    public Menu() {
-        super("Menú");
+    public Reproductor() {
+        super("Player");
         setLookAndFeel();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         FlowLayout admin = new FlowLayout();
         setLayout(admin);
-        JCheckBox fabada = new JCheckBox("Fabada", true);
-        JCheckBox pote = new JCheckBox("Pote");
-        JCheckBox ensaladilla = new JCheckBox("Ensaladilla");
-        JCheckBox pan = new JCheckBox("Pan", true);
-        ButtonGroup comidas = new ButtonGroup();
-        comidas.add(fabada);
-        comidas.add(pote);
-        comidas.add(ensaladilla);
-
-        add(fabada);
-        add(pote);
-        add(ensaladilla);
-        add(pan);
+        JButton btnPlay = new JButton("Play");
+        JButton btnStop = new JButton("Stop");
+        JButton btnPause = new JButton("Pause");
+        add(btnPlay);
+        add(btnStop);
+        add(btnPause);
         pack();
         setVisible(true);
     }
-
-    private void setLookAndFeel() {
+    
+        private void setLookAndFeel() {
         try {
             UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
         } catch (Exception e) {
@@ -52,7 +44,7 @@ public class Menu extends JFrame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Menu frMenu = new Menu();
+        Reproductor frReproductor=new Reproductor();
     }
 
 }
