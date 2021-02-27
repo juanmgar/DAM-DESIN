@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package garciasierra.juanmanuel.a_componentes;
+package a_componentes;
 
 import java.awt.FlowLayout;
 import javax.swing.ButtonGroup;
