@@ -6,30 +6,33 @@
 package a_componentes;
 
 import java.awt.FlowLayout;
+import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JTextArea;
 import javax.swing.UIManager;
 
 /**
  *
- * @author JuanMa Garcia @juanmgar
+ * @author JuanMa García @juanmgar
  */
-public class Comentarios extends JFrame {
+public class JButton_Reproductor extends JFrame{
 
-    public Comentarios() {
-        super("Comentarios");
+    public JButton_Reproductor() {
+        super("Player");
         setLookAndFeel();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         FlowLayout admin = new FlowLayout();
         setLayout(admin);
-        JTextArea taComentarios = new JTextArea(8, 40);
-        taComentarios.setText("Esta es la primera línea de texto\n …y esta es la segunda.");
-        add(taComentarios);
+        JButton btnPlay = new JButton("Play");
+        JButton btnStop = new JButton("Stop");
+        JButton btnPause = new JButton("Pause");
+        add(btnPlay);
+        add(btnStop);
+        add(btnPause);
         pack();
         setVisible(true);
     }
-
-    private void setLookAndFeel() {
+    
+        private void setLookAndFeel() {
         try {
             UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
         } catch (Exception e) {
@@ -41,7 +44,7 @@ public class Comentarios extends JFrame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Comentarios frComentarios = new Comentarios();
+        JButton_Reproductor frReproductor=new JButton_Reproductor();
     }
 
 }

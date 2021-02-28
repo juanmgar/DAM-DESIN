@@ -22,13 +22,13 @@ import javax.swing.UIManager;
  *
  * @author JuanMa Garcia @juanmgar
  */
-public class Loro extends JFrame implements ActionListener, KeyListener {
+public class KeyListener_Loro extends JFrame implements ActionListener, KeyListener {
 
     JLabel lblLoro;
     JTextField txtLoro;
     JButton btnReset;
 
-    public Loro() {
+    public KeyListener_Loro() {
         super("Lorito parlanchin");
         setLookAndFeel();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -91,7 +91,7 @@ public class Loro extends JFrame implements ActionListener, KeyListener {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Loro frLoro = new Loro();
+        KeyListener_Loro frLoro = new KeyListener_Loro();
     }
 
 }

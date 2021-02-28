@@ -15,9 +15,9 @@ import javax.swing.UIManager;
  *
  * @author JuanMa Garcia @juanmgar
  */
-public class Menu extends JFrame {
+public class JCheckBox_Menu extends JFrame {
 
-    public Menu() {
+    public JCheckBox_Menu() {
         super("Menú");
         setLookAndFeel();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -52,7 +52,7 @@ public class Menu extends JFrame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Menu frMenu = new Menu();
+        JCheckBox_Menu frMenu = new JCheckBox_Menu();
     }
 
 }

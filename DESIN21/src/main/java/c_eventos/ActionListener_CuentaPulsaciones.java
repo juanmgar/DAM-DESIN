@@ -17,13 +17,13 @@ import javax.swing.UIManager;
  *
  * @author JuanMa Garcia @juanmgar
  */
-public class CuentaPulsaciones extends JFrame implements ActionListener {
+public class ActionListener_CuentaPulsaciones extends JFrame implements ActionListener {
 
     JLabel lblPulsaciones;
     JButton btnPulsame;
     int numeroPulsaciones;
 
-    public CuentaPulsaciones() {
+    public ActionListener_CuentaPulsaciones() {
         super("Pulsaciones");
         inicializaPulsaciones();
         setLookAndFeel();
@@ -67,7 +67,7 @@ public class CuentaPulsaciones extends JFrame implements ActionListener {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        CuentaPulsaciones frPulsaciones = new CuentaPulsaciones();
+        ActionListener_CuentaPulsaciones frPulsaciones = new ActionListener_CuentaPulsaciones();
     }
 
     @Override

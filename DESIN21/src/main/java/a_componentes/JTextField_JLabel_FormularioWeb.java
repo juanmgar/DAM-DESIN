@@ -6,30 +6,29 @@
 package a_componentes;
 
 import java.awt.FlowLayout;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
 import javax.swing.UIManager;
 
 /**
  *
  * @author JuanMa Garcia @juanmgar
  */
-public class Profesiones extends JFrame {
+public class JTextField_JLabel_FormularioWeb extends JFrame {
 
-    public Profesiones() {
-        super("Profesiones");
+    FlowLayout admin = new FlowLayout();
+
+    public JTextField_JLabel_FormularioWeb() {
+        super("TextField");
         setLookAndFeel();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JLabel lblWeb = new JLabel("Página Web: ", JLabel.RIGHT);
+        JTextField txtWeb = new JTextField(20);
         FlowLayout admin = new FlowLayout();
         setLayout(admin);
-        JComboBox cbProfesiones = new JComboBox();
-        cbProfesiones.addItem("Carnicero");
-        cbProfesiones.addItem("Panadero");
-        cbProfesiones.addItem("Sexador de pollos");
-        cbProfesiones.addItem("Herrero");
-        cbProfesiones.addItem("Luchador");
-        cbProfesiones.addItem("Nini");
-        add(cbProfesiones);
+        add(lblWeb);
+        add(txtWeb);
         pack();
         setVisible(true);
     }
@@ -46,7 +45,7 @@ public class Profesiones extends JFrame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Profesiones frProfesiones = new Profesiones();
+        JTextField_JLabel_FormularioWeb frFormularioWeb = new JTextField_JLabel_FormularioWeb();
     }
 
 }

@@ -16,7 +16,7 @@ import javax.swing.UIManager;
  *
  * @author JuanMa Garcia @juanmgar
  */
-public class Modulos extends JFrame {
+public class JList_Modulos extends JFrame {
 
     private String[] modulos
             = {"Sistemas de Gestión Empresarial",
@@ -28,7 +28,7 @@ public class Modulos extends JFrame {
                 "Formación y orientación laboral"
             };
 
-    public Modulos() {
+    public JList_Modulos() {
         super("Modulos DAM");
         setLookAndFeel();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -57,7 +57,7 @@ public class Modulos extends JFrame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Modulos frmModulos = new Modulos();
+        JList_Modulos frmModulos = new JList_Modulos();
     }
 
 }

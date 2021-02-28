@@ -12,9 +12,9 @@ import javax.swing.UIManager;
  *
  * @author juanmgar
  */
-public class HolaSwingFrame extends JFrame {
+public class JFrame_HolaMundo extends JFrame {
 
-    public HolaSwingFrame() {
+    public JFrame_HolaMundo() {
         super("Hola mundo!");
         setLookAndFeel();
         setSize(400, 200);
@@ -31,7 +31,7 @@ public class HolaSwingFrame extends JFrame {
     }
     
     public static void main(String[] arguments){
-        HolaSwingFrame frSaluda = new HolaSwingFrame();
+        JFrame_HolaMundo frSaluda = new JFrame_HolaMundo();
     }
 
 }

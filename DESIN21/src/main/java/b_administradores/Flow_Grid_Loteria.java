@@ -20,7 +20,7 @@ import javax.swing.UIManager;
  *
  * @author JuanMa Garcia @juanmgar
  */
-public class Loteria extends JFrame {
+public class Flow_Grid_Loteria extends JFrame {
 // Elementos de la primera fila
 
     JPanel pFila1 = new JPanel();
@@ -53,7 +53,7 @@ public class Loteria extends JFrame {
     JLabel lblAnios = new JLabel("Años: ", JLabel.RIGHT);
     JTextField txtAnios = new JTextField();
 
-    public Loteria() {
+    public Flow_Grid_Loteria() {
         super("Lotería");
         opcionesGenerales();
         rellenaFila1();
@@ -144,7 +144,7 @@ public class Loteria extends JFrame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Loteria fLoteria = new Loteria();
+        Flow_Grid_Loteria fLoteria = new Flow_Grid_Loteria();
     }
 
 }

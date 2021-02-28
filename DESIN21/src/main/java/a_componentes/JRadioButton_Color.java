@@ -16,9 +16,9 @@ import javax.swing.UIManager;
  *
  * @author JuanMa Garcia @juanmgar
  */
-public class Color extends JFrame {
+public class JRadioButton_Color extends JFrame {
 
-    public Color() {
+    public JRadioButton_Color() {
         super("Color");
         setLookAndFeel();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -55,7 +55,7 @@ public class Color extends JFrame {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Color frColor = new Color();
+        JRadioButton_Color frColor = new JRadioButton_Color();
     }
 
 }
