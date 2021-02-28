@@ -23,11 +23,11 @@ import javax.swing.UIManager;
  *
  * @author JuanMa Garcia @juanmgar
  */
-public class JMenu_JPopUp_JMenuBar_ImageIcon_Menu extends JFrame implements ActionListener {
+public class JMenu_JMenuBar_ImageIcon_Menu extends JFrame implements ActionListener {
 
     JTextArea editor;
 
-    public JMenu_JPopUp_JMenuBar_ImageIcon_Menu() {
+    public JMenu_JMenuBar_ImageIcon_Menu() {
         super("Menú de Opciones");
         setLookAndFeel();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -128,7 +128,7 @@ public class JMenu_JPopUp_JMenuBar_ImageIcon_Menu extends JFrame implements Acti
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        JMenu_JPopUp_JMenuBar_ImageIcon_Menu ejemplo = new JMenu_JPopUp_JMenuBar_ImageIcon_Menu();
+        JMenu_JMenuBar_ImageIcon_Menu ejemplo = new JMenu_JMenuBar_ImageIcon_Menu();
     }
 
     @Override
