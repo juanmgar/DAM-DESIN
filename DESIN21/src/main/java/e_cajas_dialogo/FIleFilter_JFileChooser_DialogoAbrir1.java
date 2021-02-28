@@ -32,6 +32,12 @@ public class FIleFilter_JFileChooser_DialogoAbrir1 extends JFrame {
         //Establecemos donde queremos que se abra nuestra ventana de dialogo
         File rutaApertura = new File("D:/desarrollo/");
         dlgAbrir.setCurrentDirectory(rutaApertura);
+        
+        //Tipos de ficheros que se pueden abrir
+        //JFileChooser.FILES_ONLY
+        //JFileChooser.DIRECTORIES_ONLY
+        //JFileChooser.FILES_AND_DIRECTORIES
+        dlgAbrir.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 
         int opcion = dlgAbrir.showOpenDialog(this);
         if (opcion == JFileChooser.APPROVE_OPTION) {
