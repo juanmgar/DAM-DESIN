@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<toc version="2.0">
+	<tocitem text="Uso de la calculadora" target="calculadora">
+		<tocitem text="Uso modo científica" target="modocientifico" />
+		<tocitem text="Uso modo estadistica" target="modoestadistica" />
+		<tocitem text="Uso modo programador" target="modoprogramador" />
+	</tocitem>
+	<tocitem text="Historial de calculos" target="historialcalculos">	</tocitem>
+</toc>
