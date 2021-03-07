@@ -82,16 +82,11 @@ public class UT4_Documentacion extends JFrame implements ActionListener {
         
         setJMenuBar(menuBar);
         
-        btnAyuda = new JButton("Haz click para ver la ayuda", iconoAyuda);
-        add(btnAyuda);
-        
-        verLaAyuda();
-        
         FlowLayout admin = new FlowLayout();
         setLayout(admin);
-        
+        btnAyuda = new JButton("Haz click para ver la ayuda", iconoAyuda);  
         add(btnAyuda);
-        
+        iniciarAyuda();
         setLocationRelativeTo(null);
         setVisible(true);
     }
@@ -119,7 +114,7 @@ public class UT4_Documentacion extends JFrame implements ActionListener {
         
     }
 
-    private void verLaAyuda() {
+    private void iniciarAyuda() {
         try {
             //Cargamos el fichero de ayuda
             File fichero = new File("help/help_set.hs");
